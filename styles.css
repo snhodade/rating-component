@@ -7,7 +7,6 @@ body{
 h1{
     color:  hsl(0, 0%, 100%);
     padding-left: 1em;
-    font-weight :700;
 }
 p{
     color: hsl(217, 12%, 63%);
@@ -33,7 +32,7 @@ p{
     margin-left: 1.5em;
     border-radius: 50%;
 }
-.container btn-container {
+.container ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +40,7 @@ p{
     margin-right: 2rem;
     list-style-type: none;
   }
-  .container button {
+  .container ul li button {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -50,12 +49,11 @@ p{
     padding-top: 0.2rem;
     color: hsl(0, 0%, 100%);
     transition: 0.3s;
-    cursor:pointer
   }
-  .container button:hover {
+  .container ul li button:hover {
     background-color: hsl(25, 97%, 53%);
   }
-  .container button:focus {
+  .container ul li button:focus {
     background-color: hsl(216, 12%, 54%);
   }
   
@@ -116,12 +114,13 @@ p{
     display: none;
   }
 
-@media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 400px) {
     .container{
         height: 90vh;
         width: 80vw;
         margin: 5vh auto 0;
         padding: 0.5em;
         border-radius: 2em;
+    
     }
-}
+  }
